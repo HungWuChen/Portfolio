@@ -1,0 +1,57 @@
+
+# PORTFOLIO CONTENT EDITING GUIDE
+
+All data for this portfolio is stored in a single file for easy access: `constants.ts`.
+This guide explains how to update each section of your website.
+
+---
+
+## 1. UPDATING PERSONAL INFO (HERO SECTION)
+Locate the `HERO_DATA` object in `constants.ts`.
+- `name`: Your display name.
+- `title`: Your professional title (e.g., "Mechanical Design Engineer").
+- `tagline`: The short text appearing below your name.
+- `phone`: Your contact number.
+- `location`: Your city/state.
+- `linkedin`: **YOUR LINKEDIN URL** (e.g., "https://www.linkedin.com/in/your-name/").
+
+Example:
+```typescript
+export const HERO_DATA = {
+  name: "ALEX MERCER",
+  // ...
+  linkedin: "https://www.linkedin.com/in/alex-mercer",
+};
+```
+
+## 2. ADDING/EDITING PROJECTS (SELECTED WORKS)
+Locate the `PROJECTS_DATA` array. Each object inside `{}` represents a project.
+To add a new project, copy an existing block and paste it at the end of the array.
+
+Key fields:
+- `category`: **IMPORTANT** - This is used for the filter tabs (e.g., "CAD", "FEM", "CFD"). If you add a new category name here, a new filter button will automatically appear on the website.
+- `imageUrl`: The main thumbnail image.
+- `gallery`: An array of strings for extra images shown in the pop-up modal.
+  `gallery: ["url_to_image_1", "url_to_image_2"]`
+- `details`: The main text description in the pop-up.
+- `methodology`: The secondary "Methodology" text section in the pop-up.
+- `highlights`: (Formerly "metrics"). This section works for both numbers and text.
+    - **KPI Example**: `{ label: "Weight Saved", value: "25%" }`
+    - **Text Example**: `{ label: "Material", value: "Aluminum" }` or `{ label: "Status", value: "Patented" }`
+
+## 3. UPDATING SKILLS (TECHNICAL ARSENAL)
+Locate `SKILLS_DATA`.
+- It consists of categories (e.g., "Analysis & Simulation").
+- Add or remove strings from the `skills` array to update the list.
+
+## 4. UPDATING EXPERIENCE
+Locate `EXPERIENCE_DATA`.
+- `id`: Unique identifier (e.g., "exp3").
+- `role`: Job Title.
+- `company`: Company Name.
+- `description`: Short summary of duties.
+
+---
+
+## IMAGES
+To change images, simply replace the URL string (e.g., "https://picsum.photos/...") with the path to your image file or a hosted URL.
