@@ -31,7 +31,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="text-zinc-600 text-[10px] text-center md:text-right font-mono">
-          <p>© {new Date().getFullYear()} {HERO_DATA.name}.</p>
+          <p>&copy; {new Date().getFullYear()} {HERO_DATA.name}.</p>
           <p>System: React + Tailwind.</p>
         </div>
       </div>
