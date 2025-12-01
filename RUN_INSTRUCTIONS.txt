@@ -1,0 +1,26 @@
+﻿How to run this project
+=======================
+
+Local development (from this folder)
+1) cd Portfolio
+2) npm install
+3) npm run dev
+4) Open http://localhost:5173 in your browser.
+
+Preview the production build locally
+1) cd Portfolio
+2) npm run build
+3) npm run preview
+4) Open the URL shown in the terminal (defaults to http://localhost:4173).
+
+Deploy to GitHub Pages (needs a GitHub remote configured)
+1) cd Portfolio
+2) npm install
+3) npm run build
+4) npm run deploy
+5) GitHub will serve the site from the gh-pages branch once the publish step finishes.
+
+Notes
+- Requires Node.js 18+ and npm.
+- If you have not set a remote yet, add it once with: git remote add origin <your-github-repo-url>.
+- Deployment uses the gh-pages package to push the built dist/ directory to the gh-pages branch.
