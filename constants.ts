@@ -6,7 +6,7 @@ export const HERO_DATA = {
   title: "COMPUTATIONAL MECHANICAL DESIGNER",
   tagline: "Bridging the gap between physics-based simulation and automated design implementation.",
   email: "hungwuu@gmail.com",
-  phone: "+1 (415) 555-0123",
+  phone: "+39 3450306447",
   location: "Milano, Italy",
   linkedin: "https://www.linkedin.com/in/hung-wu/" // UPDATE THIS LINK
 };
@@ -14,15 +14,15 @@ export const HERO_DATA = {
 export const SKILLS_DATA: SkillCategory[] = [
   {
     title: "Analysis & Simulation",
-    skills: ["ANSYS Mechanical", "Abaqus FEA", "OpenFOAM (CFD)", "LS-DYNA", "Topology Optimization"]
+    skills: ["ANSYS Mechanical", "Abaqus FEA", "OpenFOAM (CFD)", "Topology Optimization (Hypermesh)"]
   },
   {
-    title: "Design & CAD",
-    skills: ["SolidWorks", "Siemens NX", "Rhino 3D + Grasshopper", "Generative Design", "DFM/DFA"]
+    title: "Design/CAD/CAM",
+    skills: ["SolidWorks", "Inventor", "Rhino 3D + Grasshopper", "Fusion 360", "Fusion 360 CAM"]
   },
   {
     title: "Computation & Code",
-    skills: ["Python (SciPy, NumPy)", "MATLAB", "C++", "APDL Scripting", "Machine Learning for MechE"]
+    skills: ["Python", "MATLAB"]
   }  
 ];
 
@@ -51,7 +51,7 @@ export const PROJECTS_DATA: Project[] = [
     category: "FEM",
     description: "Weight reduction of an engine mount bracket using topology optimization algorithms while maintaining structural integrity under high-g loads.",
     tags: ["nTopology", "ANSYS", "Additive Mfg"],
-    imageUrl: "https://picsum.photos/800/600",
+    imageUrl: import.meta.env.BASE_URL + "Fig/RhinoSurface.png",
     gallery: ["https://picsum.photos/800/604"],
     highlights: [
       { label: "Mass Reduction", value: "35%" },
