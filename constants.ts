@@ -52,7 +52,7 @@ export const PROJECTS_DATA: Project[] = [
     description: "Weight reduction of an engine mount bracket using topology optimization algorithms while maintaining structural integrity under high-g loads.",
     tags: ["nTopology", "ANSYS", "Additive Mfg"],
     imageUrl: import.meta.env.BASE_URL + "Fig/RhinoSurface.png",
-    gallery: ["https://picsum.photos/800/604"],
+    gallery: [import.meta.env.BASE_URL + "Fig/RhinoSurface.png"],
     highlights: [
       { label: "Mass Reduction", value: "35%" },
       { label: "Stiffness Increase", value: "12%" },

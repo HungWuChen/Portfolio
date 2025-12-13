@@ -19,6 +19,8 @@ Deploy to GitHub Pages (needs a GitHub remote configured)
 3) npm run build
 4) npm run deploy
 5) GitHub will serve the site from the gh-pages branch once the publish step finishes.
+https://hungwuchen.github.io/Portfolio/
+
 
 Notes
 - Requires Node.js 18+ and npm.
