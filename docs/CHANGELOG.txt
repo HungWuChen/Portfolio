@@ -1,0 +1,6 @@
+﻿Documentation Change Log
+=======================
+
+- 2025-01-12: Added RUN_INSTRUCTIONS.txt with local dev, preview, and GitHub Pages deploy steps.
+- 2025-01-12: Clarified how to reference local images via public/Fig and /Fig/... paths for Vite/GitHub Pages.
+- 2025-01-12: For images in constants.ts, use import.meta.env.BASE_URL + "Fig/RhinoSurface.png" and same for gallery entries.
